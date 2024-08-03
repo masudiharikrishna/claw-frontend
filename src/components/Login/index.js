@@ -31,7 +31,7 @@ class Login extends Component {
             }
             const data = await response.json();
             Cookies.set('token', data.token, { expires: 7 });
-            this.props.navigate('/homepage');
+            this.props.navigate('/');
         } catch (error) {
             this.setState({ errorMessage: 'Invalid credentials. Please try again.' });
         }
