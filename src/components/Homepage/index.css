@@ -1,0 +1,78 @@
+/* Homepage.css */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  button {
+    margin-bottom: 20px;
+  }
+  
+  .list-group {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .list-group-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .text-danger {
+    color: #dc3545;
+    margin-top: 10px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .list-group-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .list-group-item {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    button {
+      padding: 10px;
+    }
+  }
+  
